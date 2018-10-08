@@ -1,6 +1,6 @@
 # Create Node Window|Document|Global Mocks
 
-> seful for Angular Universal projects or any JS applications doing SSR where window|document|global objects may be used in Node. 
+> Useful for Angular Universal projects or any JS applications doing SSR where window|document|global objects may be used in Node. 
 
 ## Installation
 
@@ -41,12 +41,14 @@ import {join} from 'path';
 
 const template = readFileSync(join(DIST_FOLDER, 'ANGULAR_CLI_PROJECT_NAME', 'index.html')).toString();
 
-const noop = () => () => {};
+const noop = () => {};
+
 // Window Mocks
 const additionalWindowMocks: IMock = {
   alert: () => {},
   someWindowObject: {}
 };
+
 // Node Global Mocks
 const nodeGlobalMocks: IMock = {
   jQuery: () => {
@@ -66,8 +68,6 @@ createNodeMocks(template, additionalWindowMocks, nodeGlobalMocks);
 ---
 
 # How to Contribute?
-
-## ng-Application-Insights Development
 
 To generate all `*.js`, `*.js.map` and `*.d.ts` files:
 
