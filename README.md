@@ -37,7 +37,7 @@ environment, and ignore them.
 ```typescript
 import { createNodeMocks, IMock } from './node-mocks';
 import { readFileSync } from 'fs';
-import {join} from 'path';
+import { join } from 'path';
 
 const template = readFileSync(join(DIST_FOLDER, 'ANGULAR_CLI_PROJECT_NAME', 'index.html')).toString();
 

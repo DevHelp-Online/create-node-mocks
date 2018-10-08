@@ -1,6 +1,6 @@
 {
   "name": "@devhelponline/create-node-mocks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mock window | document | global objects in Node. Useful for Angular Universal projects or any JS applications doing SSR where these must be stubbed out to prevent errors.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
