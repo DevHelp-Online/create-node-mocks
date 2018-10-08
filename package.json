@@ -1,0 +1,43 @@
+{
+  "name": "@devhelponline/create-node-mocks",
+  "version": "0.9.1",
+  "description": "Mock window | document | global objects in Node. Useful for Angular Universal projects or any JS applications doing SSR where these must be stubbed out to prevent errors.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "lint": "tslint -p tsconfig.json",
+    "clean": "rimraf ./dist",
+    "clean:install": "rimraf ./dist ./package-lock.json && npm i",
+    "build": "npm run clean && npm run tsc",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevHelp-Online/create-node-mocks.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "angular",
+    "angular-universal",
+    "universal"
+  ],
+  "author": {
+    "name": "Mark Pieszak [DevHelp Online]",
+    "email": "Hello@DevHelp.Online",
+    "url": "http://DevHelp.Online"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevHelp-Online/create-node-mocks/issues"
+  },
+  "homepage": "https://github.com/DevHelp-Online/create-node-mocks#readme",
+  "dependencies": {
+    "domino": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.11.4",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.1"
+  }
+}
