@@ -14,9 +14,9 @@ export function createNodeMocks (
 ) {
   if (!template && typeof template !== 'string') {
     console.error(`
-      A template of your index.html file must be provided
-      IE:
-        import { createNodeMocks } from 
+      A template of your index.html file must be provided.
+      Example:
+        import { createNodeMocks } from '@devhelponline/create-node-mocks';
         const template = readFileSync(join(DIST_FOLDER, 'Your_CLI_Project_Name', 'index.html')).toString();
         createNodeMocks(template);
     `);
@@ -31,7 +31,6 @@ export function createNodeMocks (
   win.alert = noop;
 
   Object.keys(additionalWindowMocks).forEach(key => {
-    console.log(additionalWindowMocks[key]);
     win[key] = additionalWindowMocks[key];
   });
 
@@ -43,7 +42,6 @@ export function createNodeMocks (
   global['HTMLElement'] = null;
 
   Object.keys(globalNodeMocks).forEach(key => {
-    console.log(globalNodeMocks[key]);
     global[key] = globalNodeMocks[key];
   });
 
