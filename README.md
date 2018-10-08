@@ -32,7 +32,7 @@ Voila, common window|document errors will gone.
 Make sure to always wrap these around a test to determine whether this is a Server 
 environment, and ignore them.
 
-### Add custom Window or (Node) Global mocks?
+### Add custom Window or (Node) Global mocks
 
 ```typescript
 import { createNodeMocks, IMock } from './node-mocks';
@@ -50,6 +50,7 @@ const additionalWindowMocks: IMock = {
 };
 
 // Node Global Mocks
+// In this example we want to add a few jQuery mocks
 const nodeGlobalMocks: IMock = {
   jQuery: () => {
     return {
