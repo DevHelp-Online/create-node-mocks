@@ -2,6 +2,8 @@
 
 > Useful for Angular Universal projects or any JS applications doing SSR where window|document|global objects may be used in Node. 
 
+With createNodeMocks() you'll be able to automatically mock & stub out common global (browser-only) APIs such as `window | document | navigator` (and others), and easily inject any additional mocks you need! 
+
 ## Installation
 
 Install & save the library to your package.json:
