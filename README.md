@@ -1,6 +1,10 @@
-# Create Node Window|Document|Global Mocks
+# Mock Window & Document in NodeJS
 
-> Useful for Angular Universal projects or any JS applications doing SSR where window|document|global objects may be used in Node. 
+## Perfect for Angular Universal or any SSR Applications
+
+[![npm version](https://badge.fury.io/js/%40devhelponline%2Fcreate-node-mocks.svg)](https://badge.fury.io/js/%40devhelponline%2Fcreate-node-mocks)
+
+> Angular Universal projects or any JS applications doing SSR where window|document|global objects may be used in Node. 
 
 With createNodeMocks() you'll be able to automatically mock & stub out common global (browser-only) APIs such as `window | document | navigator` (and others), and easily inject any additional mocks you need! 
 
